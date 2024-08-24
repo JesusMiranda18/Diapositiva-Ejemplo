@@ -1,2 +1,2 @@
 #Ejemplo
-2+2
+rnorm(100)
