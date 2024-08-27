@@ -1,6 +1,6 @@
 ---
 title: "Aprendamos un poco más de RevealJS"
-author: "Jesus Miranda M."
+author: "Irwing S. Saldaña"
 format: 
   revealjs:
     theme: simple
@@ -11,9 +11,8 @@ format:
     code-overlays: true
     width: 1280
     height: 720
-    scrollable: true
 title-slide-attributes:
-  data-background-image: "https://e1.pxfuel.com/desktop-wallpaper/6/764/desktop-wallpaper-popular-ppt-templates-powerpoint-for-slides-1-ppt-certificate.jpg"
+  data-background-image: "https://image.slidesdocs.com/responsive-images/background/blue-abstract-texture-polygon-technology-nature-powerpoint-background_94e8175035__960_540.jpg"
   data-background-size: cover
   data-background-opacity: "1"   
 ---
@@ -22,51 +21,55 @@ title-slide-attributes:
 
 Aquí hay un top secret.
 
+
 ## Temas de RevealJS (diapo centrada) {.center}
 
-::: columns
+:::: {.columns}
+
 ::: {.column width="40%"}
--   beige
--   blood
--   dark
--   default
--   league
--   moon
+- beige
+- blood
+- dark
+- default
+- league
+- moon
 :::
 
 ::: {.column width="60%"}
--   night
--   serif
--   simple
--   sky
--   solarized
+- night
+- serif
+- simple
+- sky
+- solarized
 :::
-:::
+
+::::
+
 
 ## Lista Numerada
 
-1.  none (Sin transición)
-2.  fade (Desvanecimento cruzado)
-3.  slide (Movimiento horizontal)
-4.  convex (Movimiento convexo en ángulo)
-5.  concave (Movimiento concavo en ángulo)
-6.  zoom (Aplica zoom)
+1. none (Sin transición)
+1. fade (Desvanecimento cruzado)
+1. slide (Movimiento horizontal)
+1. convex (Movimiento convexo en ángulo)
+1. concave (Movimiento concavo en ángulo)
+1. zoom	(Aplica zoom) 
 
 ## Imagen desde la Web
 
-![Figura 1. Pato de pico amarillo y cabeza verde](https://www.barraquer.com/uploads/media/default/0001/02/95da696a02bf597a77b1b358ef9c165226a8e84f.jpeg)
+![Quarto Logo](https://quarto.org/img/quarto-logo.png)
 
-![Figura 2. El gato andino](https://blog.felinus.cl/wp-content/uploads/2023/04/IMAGENES-WORDPRESS-1200-%C3%97-675-px-9-1024x576.png)
+
 
 ## Colocar un gran texto que nunca se desborda
 
-::: r-fit-text
+::: {.r-fit-text}
 masterX
 :::
 
-## Añadiendo fragmentos
+## Añadiendo fragmentos 
 
-::: fragment
+::: {.fragment}
 Fade in
 :::
 
@@ -86,23 +89,26 @@ Fade in, then out
 Slide up while fading in
 :::
 
+
 ## Añadiendo orden a los fragmentos
 
-::: {.fragment fragment-index="3"}
+::: {.fragment fragment-index=3}
 Aparece al final
 :::
 
-::: {.fragment fragment-index="1"}
+::: {.fragment fragment-index=1}
 Aparece primero
 :::
 
-::: {.fragment fragment-index="2"}
+::: {.fragment fragment-index=2}
 Aparece segundo
 :::
 
+
 ## Paneles con Código y Gráfico {transition="fade" transition-speed="fast"}
 
-::: panel-tabset
+::: {.panel-tabset}
+
 ## Código
 
 ```{r}
@@ -136,6 +142,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 ```{r}
 mtcars
 ```
+
 :::
 
 ## Insertando interactividad: mapas
@@ -215,3 +222,6 @@ fig <- fig %>%
 fig
 
 ```
+
+
+
